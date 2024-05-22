@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1>Music Pro</h1>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Your Library</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <input type="text" placeholder="Search for songs, artists...">
+            </div>
+            <div class="content">
+                <h2>Musics</h2>
+                <div class="song-list">
+                    <!-- Repeat this block for each song -->
+                    <div class="song" data-index="0">
+                        <img src="coversongimg/janiye.jpg" alt="Song Cover">
+                        <div class="song-info">
+                            <h3>Janiye</h3>
+                            <p>Vishal Mishra</p>
+                        </div>
+                        <button class="play-button">Play</button>
+                    </div>
+                    <div class="song" data-index="1">
+                        <img src="coversongimg/kaisehua.jpg" alt="Song Cover">
+                        <div class="song-info">
+                            <h3>Kaise Hua</h3>
+                            <p>Vishal Mishra</p>
+                        </div>
+                        <button class="play-button">Play</button>
+                    </div>
+                    <div class="song" data-index="2">
+                        <img src="coversongimg/kauntujhe.jpg" alt="Song Cover">
+                        <div class="song-info">
+                            <h3>Kaun Tujhe</h3>
+                            <p>Palak Muchhal</p>
+                        </div>
+                        <button class="play-button">Play</button>
+                    </div>
+                    <div class="song" data-index="3">
+                        <img src="coversongimg/pehlebhimain.jpg" alt="Song Cover">
+                        <div class="song-info">
+                            <h3>Pehle Bhi Main</h3>
+                            <p>Vishal Mishra</p>
+                        </div>
+                        <button class="play-button">Play</button>
+                    </div>
+                    <div class="song" data-index="4">
+                        <img src="coversongimg/phirkabhi.jpg" alt="Song Cover">
+                        <div class="song-info">
+                            <h3>Phir Kabhi</h3>
+                            <p>Arjit Singh</p>
+                        </div>
+                        <button class="play-button">Play</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Music Player -->
+        <div class="music-player">
+            <div class="current-song">
+                <img src="song-cover1.jpg" alt="Song Cover">
+                <div class="song-info">
+                    <h3>Song Title 1</h3>
+                    <p>Artist 1</p>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="prev">Prev</button>
+                <button id="play-pause">Play</button>
+                <button id="next">Next</button>
+            </div>
+        </div>
+    </div>
+    <audio id="audio-player"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

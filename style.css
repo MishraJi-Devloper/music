@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poetsen+One&display=swap');
+
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sidebar .navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .navigation ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar .navigation ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.song-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.song {
+    background-color: #1db954;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.song img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.song .song-info h3, .song .song-info p {
+    margin: 0;
+}
+
+.song .play-button {
+    margin-left: auto;
+    background-color: #fff;
+    color: #1db954;
+    border: none;
+    padding: 10px 20px; /* Adjusted padding to make the button larger */
+    cursor: pointer;
+    border-radius: 20px; /* Added this line to make the button oval */
+}
+
+.music-player {
+    width: 100%;
+    padding: 20px;
+    background-color: #181818;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.music-player .current-song {
+    display: flex;
+    align-items: center;
+}
+
+.music-player .current-song img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.music-player .controls button {
+    background-color: #1db954;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 20px; /* Added this line to make the button oval */
+}
